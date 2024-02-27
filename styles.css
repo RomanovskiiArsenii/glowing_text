@@ -7,8 +7,8 @@
     --screenCoeff: calc(1vw + 1vh);
     --bgColor: rgb(20, 20, 20);
     --fontColor: rgb(95 166 151);
-    --shadowColor: rgb(0 229 215);
     --glowColor: rgb(160 255 234);
+    --shadowColor: rgb(0 229 215);
 }
 
 * {

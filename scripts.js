@@ -9,8 +9,9 @@ const glowingText = (() => {
             if (letters[index] == ' ') {
                 index++;
             }
-            letters[index] = `<span style="text-shadow: 0 0 .15em var(--shadowColor)">${letters[index]}</span>`;
-            letters[index] = `<span style="color: var(--glowColor)">${letters[index]}</span>`;
+            letters[
+                index
+            ] = `<span style="color: var(--glowColor); text-shadow: 0 0 .15em var(--shadowColor);">${letters[index]}</span>`;
             coloredText = letters.join('');
             textElement.innerHTML = coloredText;
             index = (index + 1) % letters.length;
