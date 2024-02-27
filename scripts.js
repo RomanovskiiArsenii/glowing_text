@@ -11,7 +11,7 @@ const glowingText = (() => {
             }
             letters[
                 index
-            ] = `<span style="color: var(--glowColor); text-shadow: 0 0 .15em var(--shadowColor);">${letters[index]}</span>`;
+            ] = `<span style="color: var(--glowColor); text-shadow: var(--shadowColor);">${letters[index]}</span>`;
             coloredText = letters.join('');
             textElement.innerHTML = coloredText;
             index = (index + 1) % letters.length;

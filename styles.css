@@ -8,7 +8,7 @@
     --bgColor: rgb(20, 20, 20);
     --fontColor: rgb(95 166 151);
     --glowColor: rgb(160 255 234);
-    --shadowColor: rgb(0 229 215);
+    --shadowColor: 0 0 0.3em rgb(0 229 215);
 }
 
 * {
