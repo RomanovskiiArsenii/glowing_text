@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Vintage_font';
+    src: url(Vintage_font.otf) format('opentype');
+}
+
+:root {
+    --screenCoeff: calc(1vw + 1vh);
+    --bgColor: rgb(20, 20, 20);
+    --fontColor: rgb(95 166 151);
+    --shadowColor: rgb(0 229 215);
+    --glowColor: rgb(160 255 234);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: var(--selectionColor);
+}
+
+body {
+    font-family: 'Vintage_font', sans-serif;
+    background-color: var(--bgColor);
+    font-size: calc(var(--screenCoeff) * 5);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--fontColor);
+}
+
+#glowing_text {
+    text-wrap: nowrap;
+    text-overflow: clip;
+}
